@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/your-repo-name/internal/start-04f2110f.js">
+		<link rel="modulepreload" href="/your-repo-name/internal/chunks/vendor-af0f2ef7.js">
+		<link rel="modulepreload" href="/your-repo-name/internal/layout.svelte-39935a5a.js">
+		<link rel="modulepreload" href="/your-repo-name/internal/pages/index.svelte-1aae0b95.js">
+		<link rel="stylesheet" href="/your-repo-name/internal/assets/start-61d1577b.css">
+
+		<script type="module">
+			import { start } from "/your-repo-name/internal/start-04f2110f.js";
+			start({
+				target: document.body,
+				paths: {"base":"/your-repo-name","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/your-repo-name/internal/layout.svelte-39935a5a.js"),
+						import("/your-repo-name/internal/pages/index.svelte-1aae0b95.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002F",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<h1>Welcome to SvelteKit</h1>
+<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+I am the index page and link to
+<a href="/Page1">page 1</a>
+
+
+
+			
+		</div>
+	</body>
+</html>
