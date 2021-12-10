@@ -3,7 +3,7 @@ export const get = async () => {
 	return {
 		status: 200,
 		body: {
-			someData: 'some data'
+			someData: 'some-data'
 		}
 	};
 };

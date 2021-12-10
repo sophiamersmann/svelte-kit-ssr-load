@@ -1,7 +1,7 @@
 <script context="module">
 	/** @type {import('@sveltejs/kit').Load} */
 	export const load = async ({ fetch }) => {
-		const res = await fetch(`/load`);
+		const res = await fetch(`/api/data.json`);
 		if (res.ok)
 			return {
 				props: {
@@ -12,9 +12,11 @@
 </script>
 
 <script>
+	import { base } from '$app/paths';
+
 	export let myProp;
 </script>
 
-I am page 1 and loaded <b>{myProp.someData}</b>
+I am page 2 and loaded <b>{myProp.someData}</b>
 <br />
-<a href="/">index page</a>
+<a href="{base}/">index page</a>
