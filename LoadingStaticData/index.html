@@ -13,7 +13,7 @@
 		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/chunks/vendor-af0f2ef7.js">
 		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/layout.svelte-39935a5a.js">
-		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/pages/index.svelte-45fda8e5.js">
+		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/pages/LoadingStaticData.svelte-e0a7b7d6.js">
 		<link rel="stylesheet" href="/svelte-kit-ssr-load/_app/assets/start-61d1577b.css">
 
 		<script type="module">
@@ -31,11 +31,11 @@
 					error: null,
 					nodes: [
 						import("/svelte-kit-ssr-load/_app/layout.svelte-39935a5a.js"),
-						import("/svelte-kit-ssr-load/_app/pages/index.svelte-45fda8e5.js")
+						import("/svelte-kit-ssr-load/_app/pages/LoadingStaticData.svelte-e0a7b7d6.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002F",
+						path: "\u002FLoadingStaticData",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -47,16 +47,13 @@
 		<div id="svelte">
 
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-I am the index page and link to
-<a href="/svelte-kit-ssr-load/LoadingDataUsingSlug">page 1</a>
-and <a href="/svelte-kit-ssr-load/LoadingStaticData">page 2</a>
+I am page 2 and loaded <b>static-data</b>
+<br>
+<a href="/">index page</a>
 
 
 
-			
+			<script type="application/json" data-type="svelte-data" data-url="/api/static-data.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"someData\":\"static-data\"}"}</script>
 		</div>
 	</body>
 </html>
