@@ -9,15 +9,15 @@
 
 		
 
-		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/start-f7a5ab19.js">
+		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/start-eabf626e.js">
 		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/chunks/vendor-af0f2ef7.js">
 		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/layout.svelte-39935a5a.js">
-		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/pages/LoadingDataUsingSlug.svelte-731a81fb.js">
+		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/pages/PageLoadingData.svelte-adc91046.js">
 		<link rel="stylesheet" href="/svelte-kit-ssr-load/_app/assets/start-61d1577b.css">
 
 		<script type="module">
-			import { start } from "/svelte-kit-ssr-load/_app/start-f7a5ab19.js";
+			import { start } from "/svelte-kit-ssr-load/_app/start-eabf626e.js";
 			start({
 				target: document.body,
 				paths: {"base":"/svelte-kit-ssr-load","assets":""},
@@ -31,11 +31,11 @@
 					error: null,
 					nodes: [
 						import("/svelte-kit-ssr-load/_app/layout.svelte-39935a5a.js"),
-						import("/svelte-kit-ssr-load/_app/pages/LoadingDataUsingSlug.svelte-731a81fb.js")
+						import("/svelte-kit-ssr-load/_app/pages/PageLoadingData.svelte-adc91046.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002FLoadingDataUsingSlug",
+						path: "\u002FPageLoadingData",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -47,13 +47,13 @@
 		<div id="svelte">
 
 
-I am page 1 and loaded <b>some-data</b>
+I am page 2 and loaded <b>some-data</b>
 <br>
 <a href="/svelte-kit-ssr-load/">index page</a>
 
 
 
-			<script type="application/json" data-type="svelte-data" data-url="/api/some-data.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"someData\":\"some-data\"}"}</script>
+			<script type="application/json" data-type="svelte-data" data-url="/api/data.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"someData\":\"some-data\"}"}</script>
 		</div>
 	</body>
 </html>
