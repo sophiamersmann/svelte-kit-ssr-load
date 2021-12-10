@@ -9,17 +9,18 @@
 
 		
 
-		<link rel="modulepreload" href="/your-repo-name/_app/start-9f1d0b65.js">
-		<link rel="modulepreload" href="/your-repo-name/_app/chunks/vendor-af0f2ef7.js">
-		<link rel="modulepreload" href="/your-repo-name/_app/layout.svelte-39935a5a.js">
-		<link rel="modulepreload" href="/your-repo-name/_app/pages/index.svelte-1aae0b95.js">
-		<link rel="stylesheet" href="/your-repo-name/_app/assets/start-61d1577b.css">
+		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/start-06bf8c86.js">
+		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/chunks/vendor-af0f2ef7.js">
+		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/layout.svelte-39935a5a.js">
+		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/pages/index.svelte-3b786e76.js">
+		<link rel="stylesheet" href="/svelte-kit-ssr-load/_app/assets/start-61d1577b.css">
 
 		<script type="module">
-			import { start } from "/your-repo-name/_app/start-9f1d0b65.js";
+			import { start } from "/svelte-kit-ssr-load/_app/start-06bf8c86.js";
 			start({
 				target: document.body,
-				paths: {"base":"/your-repo-name","assets":""},
+				paths: {"base":"/svelte-kit-ssr-load","assets":""},
 				session: {},
 				host: location.host,
 				route: true,
@@ -29,8 +30,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/your-repo-name/_app/layout.svelte-39935a5a.js"),
-						import("/your-repo-name/_app/pages/index.svelte-1aae0b95.js")
+						import("/svelte-kit-ssr-load/_app/layout.svelte-39935a5a.js"),
+						import("/svelte-kit-ssr-load/_app/pages/index.svelte-3b786e76.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -50,7 +51,7 @@
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
 I am the index page and link to
-<a href="/Page1">page 1</a>
+<a href="/svelte-kit-ssr-load/Page1">page 1</a>
 
 
 
