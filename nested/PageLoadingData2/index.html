@@ -13,7 +13,7 @@
 		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/chunks/vendor-99208ee0.js">
 		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/pages/__layout.svelte-761605c1.js">
-		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/pages/index.svelte-db4ecab0.js">
+		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/pages/nested/PageLoadingData2.svelte-ae4789b9.js">
 		<link rel="stylesheet" href="/svelte-kit-ssr-load/_app/assets/start-61d1577b.css">
 
 		<script type="module">
@@ -31,11 +31,11 @@
 					error: null,
 					nodes: [
 						import("/svelte-kit-ssr-load/_app/pages/__layout.svelte-761605c1.js"),
-						import("/svelte-kit-ssr-load/_app/pages/index.svelte-db4ecab0.js")
+						import("/svelte-kit-ssr-load/_app/pages/nested/PageLoadingData2.svelte-ae4789b9.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002F",
+						path: "\u002Fnested\u002FPageLoadingData2",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -52,11 +52,13 @@
 	that loads data from /api/data.json and to another
 	<a href="/svelte-kit-ssr-load/nested/PageLoadingData2">page</a></div>
 
-I am the index page
+I am a page and loaded <b>some-data</b> (WHAT2) -- data2
+<br>
+<a href="/svelte-kit-ssr-load/">index page</a>
 
 
 
-			
+			<script type="application/json" data-type="svelte-data" data-url="/api/data2.json?param=WHAT2">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"someData\":\"some-data\",\"myParam\":\"WHAT2\",\"slug\":\"data2\"}"}</script>
 		</div>
 	</body>
 </html>
