@@ -9,29 +9,28 @@
 
 		
 
-		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/start-3a1a75b5.js">
-		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/chunks/vendor-af0f2ef7.js">
-		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/chunks/paths-28a87002.js">
-		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/layout.svelte-39935a5a.js">
-		<link rel="modulepreload" href="/svelte-kit-ssr-load/_app/pages/PageLoadingData.svelte-8f6731d1.js">
-		<link rel="stylesheet" href="/svelte-kit-ssr-load/_app/assets/start-61d1577b.css">
+		<link rel="modulepreload" href="/sub/_app/start-84fc2130.js">
+		<link rel="modulepreload" href="/sub/_app/chunks/vendor-af0f2ef7.js">
+		<link rel="modulepreload" href="/sub/_app/layout.svelte-39935a5a.js">
+		<link rel="modulepreload" href="/sub/_app/pages/PageLoadingData.svelte-5c393c59.js">
+		<link rel="stylesheet" href="/sub/_app/assets/start-61d1577b.css">
 
 		<script type="module">
-			import { start } from "/svelte-kit-ssr-load/_app/start-3a1a75b5.js";
+			import { start } from "/sub/_app/start-84fc2130.js";
 			start({
 				target: document.body,
-				paths: {"base":"/svelte-kit-ssr-load","assets":""},
+				paths: {"base":"/sub","assets":""},
 				session: {},
 				host: location.host,
-				route: false,
+				route: true,
 				spa: false,
 				trailing_slash: "never",
 				hydrate: {
 					status: 200,
 					error: null,
 					nodes: [
-						import("/svelte-kit-ssr-load/_app/layout.svelte-39935a5a.js"),
-						import("/svelte-kit-ssr-load/_app/pages/PageLoadingData.svelte-8f6731d1.js")
+						import("/sub/_app/layout.svelte-39935a5a.js"),
+						import("/sub/_app/pages/PageLoadingData.svelte-5c393c59.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -49,7 +48,7 @@
 
 I am a page and loaded <b>some-data</b>
 <br>
-<a href="//svelte-kit-ssr-load">index page</a>
+<a href="/">index page</a>
 
 
 
